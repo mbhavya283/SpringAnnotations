@@ -7,19 +7,19 @@ public class Customer {
 	private int custID; 
 	private String customerName; 
 	private Address address;
-	/*
-		
+	
+			
+	@Autowired
 	public Customer(Address address) {
 		super();
 		this.address = address;
 		System.out.println("Invoked via constructor");
-	}*/
+	}
 
 	public Address getAddress() {
 		return address;
 	}
 	
-	@Autowired
 	public void setAddress(Address address) {
 		this.address = address;
 		System.out.println("Invoked via Setter");
