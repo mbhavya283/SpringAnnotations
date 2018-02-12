@@ -1,9 +1,12 @@
 package com.spring.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Customer {
 
 	private int custID; 
 	private String customerName; 
+	@Autowired
 	private Address address;
 	/*
 		
