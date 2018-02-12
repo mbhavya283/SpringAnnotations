@@ -6,6 +6,9 @@
         http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+  	 
+  	<context:annotation-config/>
+  
        
 	<bean id = "customer"  class ="com.spring.demo.Customer">
 		<property name="custID" value="100"> </property>
@@ -15,14 +18,17 @@
 		<constructor-arg name = "customerName" value = "Bhavya" ></constructor-arg> -->
 	</bean>
 	
-	    <context:annotation-config/>
 	
-	
-	<bean id ="address" class="com.spring.demo.Address">
+	<bean id ="address1" class="com.spring.demo.Address">
 		<property name="addressLine1" value="1 saint francis pl"></property>
 		<property name="addressLine2" value="apt#1401"></property>	
 		<property name="city" value="San Francisco"></property>	
 	</bean>
 	
+	<bean id ="address2" class="com.spring.demo.Address">
+		<property name="addressLine1" value="1 saint francis pl"></property>
+		<property name="addressLine2" value="apt#206"></property>	
+		<property name="city" value="San Francisco"></property>	
+	</bean>
 	
 </beans>

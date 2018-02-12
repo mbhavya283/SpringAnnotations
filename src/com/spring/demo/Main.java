@@ -17,7 +17,7 @@ public class Main {
 		 System.out.println("Customer Addr2: "+customer.getAddress().getAddressLine2());
 		 System.out.println("Customer City: "+customer.getAddress().getCity());
 
-		 Address address = (Address) context.getBean("address");
+		 Address address = (Address) context.getBean("address1");
 		 System.out.println("Addr1: "+address.getAddressLine1());
 		 System.out.println("Addr2: "+address.getAddressLine2());
 		 System.out.println("City: "+address.getCity());

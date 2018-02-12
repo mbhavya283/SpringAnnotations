@@ -1,15 +1,20 @@
 package com.spring.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Customer {
 
 	private int custID; 
 	private String customerName; 
+	@Autowired
+	@Qualifier("address2")
 	private Address address;
 	
-			
-	@Autowired
+	public Customer() {
+		super();
+	}
+
 	public Customer(Address address) {
 		super();
 		this.address = address;
@@ -19,7 +24,7 @@ public class Customer {
 	public Address getAddress() {
 		return address;
 	}
-	
+
 	public void setAddress(Address address) {
 		this.address = address;
 		System.out.println("Invoked via Setter");
