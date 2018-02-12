@@ -6,7 +6,6 @@ public class Customer {
 
 	private int custID; 
 	private String customerName; 
-	@Autowired
 	private Address address;
 	/*
 		
@@ -19,7 +18,8 @@ public class Customer {
 	public Address getAddress() {
 		return address;
 	}
-
+	
+	@Autowired
 	public void setAddress(Address address) {
 		this.address = address;
 		System.out.println("Invoked via Setter");
